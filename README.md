@@ -8,7 +8,7 @@ Perfect for beginner coders, this project demonstrates essential **DOM manipulat
 
 ## 🌐 Live Preview
 
-🔗 **Play the Game Now**: [https://shroudsourav.github.io/Rock-Paper-Scissors/](https://shroudsourav.github.io/Rock-Paper-Scissors/)
+🔗 **Play the Game Now**: [Click here to Play Now](https://htmlpreview.github.io/?https://github.com/SHROUDSOURAV/Rock-Paper-Scissors/blob/main/index.html)
 
 ---
 
