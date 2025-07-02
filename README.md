@@ -62,14 +62,15 @@ Perfect for beginner coders, this project demonstrates essential **DOM manipulat
 ```bash
 Rock-Paper-Scissors/
 │
-├── images/ # Icons for Rock, Paper, and Scissors
-│ ├── rock.png
-│ ├── paper.png
-│ └── scissors.png
+├── images/ # Game assets and demo screenshot
+│ ├── demo.png # Screenshot for README preview
+│ ├── rock.png # Rock hand icon
+│ ├── paper.png # Paper hand icon
+│ └── scissors.png # Scissors hand icon
 │
-├── index.html # Main game layout
-├── style.css # Styling and responsiveness
-├── app.js # JavaScript game logic
-└── README.md # Project documentation
+├── index.html # Main HTML file for the game UI
+├── style.css # Custom CSS for styling and animations
+├── app.js # JavaScript file containing game logic
+└── README.md # Project documentation (you are here)
 ```
 
