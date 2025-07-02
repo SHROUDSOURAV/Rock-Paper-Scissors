@@ -1,0 +1,123 @@
+body {
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  color: #f8fafc;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #38bdf8;
+  margin-bottom: 3rem;
+}
+
+/* Choice cards */
+.choice {
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom right, #6c757d, #495057);
+  padding: 1rem;
+  border-radius: 50%;
+  display: inline-block;
+  border: 4px solid transparent;
+}
+
+.choice img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.choice:hover {
+  transform: scale(1.2);
+  background-color: #1d4ed8;
+  cursor: pointer;
+}
+
+.score-board {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.score {
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+#user-score {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #0ea5e9;
+}
+
+#computer-score {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #f87171;
+}
+
+.msg-container {
+  margin-top: 2rem;
+}
+
+#msg {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  display: inline-block;
+  transition: all 0.3s ease;
+  background-color: #0a0f1c;   
+  border: 2px solid #4ade80;   
+  color: #4ade80;              
+  box-shadow: 0 0 10px rgba(74, 222, 128, 0.2);
+}
+
+
+#msg.win {
+  background-color: #14532d;    
+  border: 2px solid #4ade80;    
+  color: #d1fae5;                
+  box-shadow: 0 0 20px rgba(34, 197, 94, 0.6);
+}
+
+#msg.lose {
+  background-color: #7f1d1d;    
+  border: 2px solid #f87171;    
+  color: #fee2e2;                
+  box-shadow: 0 0 20px rgba(248, 113, 113, 0.6);
+}
+
+#msg.draw {
+  background-color: #78350f;    
+  border: 2px solid #facc15;    
+  color: #fef3c7;               
+  box-shadow: 0 0 20px rgba(250, 204, 21, 0.6);
+}
+
+/* Pop animation */
+@keyframes pop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+#msg.animate {
+  animation: pop 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .score-board {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .choice img {
+    max-width: 120px;
+  }
+}
